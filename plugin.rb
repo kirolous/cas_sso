@@ -133,7 +133,7 @@ class CASAuthenticator < ::Auth::Authenticator
 end
 
 
-auth_provider :title => 'with ToonBox Domain',
+auth_provider :title => 'Click here to sign in',
               :message => 'Log in via toonbox.com (Make sure pop up blockers are not enabled).',
               :frame_width => 920,
               :frame_height => 800,
@@ -148,7 +148,7 @@ register_css <<CSS
 
 .btn-social.cas:before {
   font-family: Ubuntu;
-  content: "TB";
+  content: "";
 }
 
 CSS
