@@ -133,8 +133,8 @@ class CASAuthenticator < ::Auth::Authenticator
 end
 
 
-auth_provider :title => 'with CAS',
-              :message => 'Log in via CAS (Make sure pop up blockers are not enabled).',
+auth_provider :title => 'with ToonBox Domain',
+              :message => 'Log in via toonbox.com (Make sure pop up blockers are not enabled).',
               :frame_width => 920,
               :frame_height => 800,
               :authenticator => CASAuthenticator.new
@@ -148,7 +148,7 @@ register_css <<CSS
 
 .btn-social.cas:before {
   font-family: Ubuntu;
-  content: "C";
+  content: "TB";
 }
 
 CSS
